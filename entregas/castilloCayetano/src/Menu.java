@@ -28,9 +28,7 @@ public class Menu {
         boolean error;
         do {
             System.out.println("Elige una opción  [1-9]");
-            try (Scanner scanner = new Scanner(System.in)) {
-                opcion = scanner.nextInt();
-            }
+            opcion = new Scanner(System.in).nextInt();
             error = !OPCIONES.incluye(opcion);
         } while (error);
         return opcion;

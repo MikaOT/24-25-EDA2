@@ -111,11 +111,9 @@ class Intervalo {
 
 	public void recoger() {
 		System.out.println ("Inferior?");
-		try (Scanner scanner = new Scanner(System.in)) {
-			setInferior(scanner.nextDouble());
-			System.out.println ("Superior?");
-			setSuperior(scanner.nextDouble());
-		}
+		setInferior(new Scanner(System.in).nextDouble());
+		System.out.println ("Superior?");
+		setSuperior(new Scanner(System.in).nextDouble());
 	}
 
 	public void mostrar() {
